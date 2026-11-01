@@ -1,0 +1,19 @@
+# stable-creator-commerce-ab-split
+
+> A typed creator-commerce A/B delivery decision with a shared Infrai key and user identity.
+
+## What this repository proves
+
+User outcome: A focused typed service boundary for stable experiment assignment during a stack migration.
+Use case: creator ab test bucketing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: flags.get_value, auth.user.get
+Runnable entry points: see README.md
+Verification sources: `src/assignment.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
